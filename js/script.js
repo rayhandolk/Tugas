@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
             successModal.show();
 
             setTimeout(function() {
-                window.location.href = 'index.html';
+                window.location.href = 'beranda.html';
             }, 2000);
         });
     }

@@ -3,66 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda - Admin Perpustakaan</title>
+    <title>Login - Admin Perpustakaan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="logo-unpam.png">
 </head>
-<body>
+<body class="bg-light">
 
-    <header class="bg-primary text-white text-center p-4">
-        <h1 class="app-title">Aplikasi Admin Perpustakaan</h1>
-        <p>Dikelola oleh Rayhan Aditya Saputra</p>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="logo-unpam.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Berandas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="transaksi.html">Transaksi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profil.html">Profil</a>
-                    </li>
-                    <li class="nav-item ms-lg-auto">
-                        <a class="nav-link" href="login.html">Login</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4 app-title">Login Admin Perpustakaan</h2>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Username</label>
+                                <input type="text" class="form-control" id="username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                            <div class="text-center mt-3">
+                                <a href="index.html">Kembali ke Beranda</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <main class="container mt-5">
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h2 class="display-5 fw-bold">Selamat Datang di Aplikasi Admin Perpustakaan</h2>
-                <p class="col-md-8 fs-4">Aplikasi ini dirancang untuk membantu mengelola data peminjaman buku di perpustakaan.</p>
-                <hr>
-                <h3>Langkah Menggunakan Aplikasi:</h3>
-                <ol>
-                    <li>Buka halaman <strong>Transaksi</strong> untuk melihat daftar buku yang dipinjam atau menambahkan data peminjaman baru.</li>
-                    <li>Isi formulir peminjaman dengan data yang valid, lalu klik tombol "Simpan".</li>
-                    <li>Kunjungi halaman <strong>Profil</strong> untuk melihat deskripsi lengkap tentang aplikasi ini.</li>
-                    <li>Gunakan halaman <strong>Login</strong> untuk masuk ke sistem (fitur simulasi).</li>
-                </ol>
+    <div class="modal fade" id="loginSuccessModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Status Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Login Berhasil!</p>
+                    <p>Anda akan diarahkan ke halaman Beranda...</p>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p>&copy; 2025 Ujian Akhir Semester - Pemrograman Web 1 - Rayhan Aditya Saputra</p>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

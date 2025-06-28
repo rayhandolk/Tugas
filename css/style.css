@@ -39,3 +39,7 @@ main {
 .vh-100 {
     min-height: 100vh;
 }
+
+.kanan {
+    color: #007bff;
+}
