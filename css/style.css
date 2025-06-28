@@ -1,0 +1,41 @@
+/* Memberi warna latar pada header dan footer */
+header {
+    background-color: #007bff; /* Biru Primer */
+}
+
+footer {
+    background-color: #343a40; /* Abu-abu Gelap */
+}
+
+/* Mengubah warna teks pada judul aplikasi */
+.app-title {
+    color: #000000; /* Putih */
+    font-weight: bold;
+}
+
+/* Menambahkan padding dan margin pada elemen */
+body {
+    padding-bottom: 70px; /* Menghindari konten tertutup footer */
+}
+
+main {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Penyesuaian Navigasi */
+.navbar-nav .nav-item:last-child {
+    margin-left: auto;
+}
+
+/* Media query untuk responsivitas tambahan */
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-item:last-child {
+        margin-left: 0;
+    }
+}
+
+/* Styling untuk halaman login */
+.vh-100 {
+    min-height: 100vh;
+}
