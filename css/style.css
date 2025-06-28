@@ -14,9 +14,6 @@ footer {
 }
 
 /* Menambahkan padding dan margin pada elemen */
-body {
-    padding-bottom: 70px; /* Menghindari konten tertutup footer */
-}
 
 main {
     padding-top: 20px;
@@ -38,8 +35,13 @@ main {
 /* Styling untuk halaman login */
 .vh-100 {
     min-height: 100vh;
+} 
+
+.test:hover {
+    color: red !important;
 }
 
-.kanan {
-    color: #007bff;
+.custom {
+    text-align: center;
+    font-weight: bolder;
 }
